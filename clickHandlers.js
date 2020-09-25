@@ -1,4 +1,4 @@
-import{ add, subtract, multiply, divide} from './mathUtils.js';
+import{add, subtract, multiply, divide} from './mathUtils.js';
 
 
 
@@ -10,11 +10,14 @@ let addend2 = document.getElementById('add-second-number');
 
 export function addClickHandler () {
 
-    if (addend1 === '' || addend2 === '') {
-        sum.textContent = 'Please enter two numbers!'
+    let num1 = addend1.value;
+    let num2 = addend2.value;
+
+    if (num1 === '' || num2 === '') {
+        sum.textContent = 'Please enter two numbers!';
     }
     else {
-        sum.textContent = add(Number(addend1), Number(addend2));
+        sum.textContent = add(Number(num1), Number(num2));
     }
 
 };
@@ -27,13 +30,16 @@ let difference = document.getElementById('difference');
 let minuend = document.getElementById('subtract-first-number');
 let subtrahend = document.getElementById('subtract-second-number');
 
-export function addClickHandler () {
+export function subtractClickHandler () {
 
-    if (minuend === '' || subtrahend === '') {
+    let num1 = minuend.value;
+    let num2 = subtrahend.value;
+
+    if (num1 === '' || num2 === '') {
         difference.textContent = 'Please enter two numbers!'
     }
     else {
-        difference.textContent = subtract(Number(minuend), Number(subtrahend));
+        difference.textContent = subtract(Number(num1), Number(num2));
     }
 
 };
@@ -43,16 +49,19 @@ export function addClickHandler () {
     // Multiplication
 
 let product = document.getElementById('product');
-factor1 = document.getElementById('multiply-first-number');
-factor2 = document.getElementById('multiply-second-number');
+let factor1 = document.getElementById('multiply-first-number');
+let factor2 = document.getElementById('multiply-second-number');
 
-export function subtractClickHandler () {
+export function multiplyClickHandler () {
 
-    if (factor1 === '' || factor2 === '') {
+    let num1 = factor1.value;
+    let num2 = factor2.value;
+
+    if (num1 === '' || num2 === '') {
         product.textContent = 'Please enter two numbers!'
     }
     else {
-        product.textContent = multiply(Number(factor1), Number(factor2));
+        product.textContent = multiply(Number(num1), Number(num2));
     }
 
 };
@@ -67,11 +76,14 @@ let divisor = document.getElementById('divide-second-number');
 
 export function divideClickHandler () {
 
-    if (dividend === '' || divisor === '') {
+    let num1 = dividend.value;
+    let num2 = divisor.value;
+
+    if (num1 === '' || num2 === '') {
         quotient.textContent = 'Please enter two numbers!'
     }
     else {
-        quotient.textContent = divide(Number(dividend), Number(divisor));
+        quotient.textContent = divide(Number(num1), Number(num2));
     }
 
 };

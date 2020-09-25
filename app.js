@@ -4,26 +4,30 @@ import{addClickHandler, subtractClickHandler, multiplyClickHandler, divideClickH
 
     // Addition
 
-addbutton = document.getElementById('add-button');
+let addButton = document.getElementById('add-button');
 
     addButton.addEventListener('click', addClickHandler);
 
 
-
-
     // Subtraction
 
-subtractButton.addEventListener('click', subtractClickHandler);
+let subtractButton = document.getElementById('subtract-button');
+
+    subtractButton.addEventListener('click', subtractClickHandler);
 
 
 
     // Multiplication
 
-multiplyButton.addEventListener('click', multiplyClickHandler);
+let multiplyButton = document.getElementById('multiply-button');
+
+    multiplyButton.addEventListener('click', multiplyClickHandler);
 
 
 
     // Divide Inputs
+
+let divideButton = document.getElementById('divide-button');
 
 divideButton.addEventListener('click', divideClickHandler);
 
