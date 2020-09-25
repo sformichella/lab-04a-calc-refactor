@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Document</title>
 </head>
+
 <body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="assets/big-logo.png"/>
+        </div>
+    </header>
+   
+
+       
+
+
+
+    <h1>It's a Calculator!</h1>
+
+
+
+    <section class="addition">
+
+        <input id="add-first-number"/>
+        <span> + </span>
+        <input id="add-second-number"/>
+        <span> = </span>
+        <p id="sum"></p>
+
+        <button id="add-button">Calculate!</button>
+
+    </section>
+
+
+
+    <section class='subtract'>
+
+        <input id="subtract-first-number"/>
+        <span> - </span>
+        <input id="subtract-second-number"/>
+        <span> = </span>
+        <p id="difference"></p>
+
+        <button id="subtract-button">Calculate!</button>
+
+    </section>
+
+
+
+    <section class="multiply">
+
+        <input id="multiply-first-number"/>
+        <span> * </span>
+        <input id="multiply-second-number"/>
+        <span> = </span>
+        <p id="product"></p>
+
+        <button id="multiply-button">Calculate!</button>
+
+    </section>
+
+
+
+    <section class="divide">
+
+        <input id="divide-first-number"/>
+        <span> / </span>
+        <input id="divide-second-number"/>
+        <span> = </span>
+        <p id="quotient"></p>
+
+        <button id="divide-button">Calculate!</button>
+
+    </section>
     
 
-        <h1>It's a Calculator!</h1>
-
-
-
-        <section class="addition">
-
-            <input id="add-first-number"/>
-            <span> + </span>
-            <input id="add-second-number"/>
-            <span> = </span>
-            <p id="sum"></p>
-
-            <button id="add-button">Calculate!</button>
-
-        </section>
-
-
-
-        <section class='subtract'>
-
-            <input id="subtract-first-number"/>
-            <span> - </span>
-            <input id="subtract-second-number"/>
-            <span> = </span>
-            <p id="difference"></p>
-
-            <button id="subtract-button">Calculate!</button>
-
-        </section>
-
-
-
-        <section class="multiply">
-
-            <input id="multiply-first-number"/>
-            <span> * </span>
-            <input id="multiply-second-number"/>
-            <span> = </span>
-            <p id="product"></p>
-
-            <button id="multiply-button">Calculate!</button>
-
-        </section>
-
-
-
-        <section class="divide">
-
-            <input id="divide-first-number"/>
-            <span> / </span>
-            <input id="divide-second-number"/>
-            <span> = </span>
-            <p id="quotient"></p>
-
-            <button id="divide-button">Calculate!</button>
-
-        </section>
-        
-
-
-
-
-        <script type="module" src="app.js"></script>
+    
+    <script type="module" src="app.js"></script>
 </body>
+
 </html>
